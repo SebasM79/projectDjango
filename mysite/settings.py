@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp', # esta carpeta representa la nueva app creada
+    'myapp',  # esta carpeta representa la nueva app creada
+    'libro', # esta carpeta representa la nueva app creada
 ]
 
 MIDDLEWARE = [

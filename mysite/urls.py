@@ -20,5 +20,6 @@ from django.urls import path, include
 from myapp import views # de esta forma se importan todas las vistas
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('myapp.urls')),  # Incluye las URLs de myapp
+    path('', include('myapp.urls')),
+    path('libro/', include('libro.urls')),  # Incluye las URLs de myapp
 ]

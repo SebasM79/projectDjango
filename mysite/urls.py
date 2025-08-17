@@ -18,8 +18,9 @@ from django.contrib import admin
 from django.urls import path, include
 # from myapp.views import hello //de esta forma se importa una sola vista
 from myapp import views # de esta forma se importan todas las vistas
+from libro import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),
-    path('libro/', include('libro.urls')),  # Incluye las URLs de myapp
+    path('', include('libro.urls')),  # Incluye las URLs de myapp
 ]
